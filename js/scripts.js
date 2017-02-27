@@ -1,3 +1,4 @@
+// Business logic
 function Places(place,landmarks,time) {
   this.locations = place;
   this.landmark = landmarks;
@@ -15,6 +16,7 @@ $(function () {
     var newPlace = new Places(placeName, placeLand, placeTime);
     console.log(newPlace);
 
+//  User interface logic
     $("ul.location").append("<li><span class='location'>"+ newPlace.locations +"</span></li>");
 
     $(".location").last().click(function() {
